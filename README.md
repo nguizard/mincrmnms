@@ -12,7 +12,7 @@ vol. 59(3), pp. 2362-2373. ISSN 1053-8119,
 
 
 The latest RMNMS source code can be found at:
-https://github.com/BIC-MNI/RMNMS
+https://github.com/nguizard/mincrmnms
 
 mincrmnms works with MINC1 and MINC2 images. However, experimental
 support for the NIfTI format has been added. This has not yet been
