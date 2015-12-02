@@ -1,0 +1,29 @@
+Tailoring your own library
+--------------------------
+The best way to improve your results is to populate the library with
+images/masks from the same scanner as the the images you are trying to
+segment. 
+
+To add your own images/masks you must copy the t2w,t1w or FLAIR of same 
+interpolation and after intensity normalization in their correspondinf 
+directory, ie:
+
+lib/1mm/t2w/
+lib/1mm/flr/
+lib/1mm/mask/
+
+You may also want to L/R flip the images to increase your N. This can
+be done using flip_volume. For example:
+
+Finally, you need to update the library files to include your new images/masks. The files to update are:
+
+library.t2w.1mm
+library.flr.1mm
+library.masks.1mm
+
+Note that unless you always use -abspath when running mincrmnms, the
+paths in these files are relative to the RMNMS library path. Other
+than that there are no restrictions on file naming and
+placement. RMNMS assumes the same order of images/masks across the
+library files, so pay special attention to the order of the file
+names.
